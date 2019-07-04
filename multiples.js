@@ -6,7 +6,18 @@
 exports.sumOfAMultiple = function( n ) {
   let sum = 0;
 
-  // do your work here
+  function multiples() {
+    let total = 0;
+    for (i = 0; i < n; i++) {
+      if (i % 3 === 0) {
+        total = total + i;
+      } else if (i % 5 === 0) {
+        total = total + i;
+      }
+    }
+    return total;
+  };
+  sum = multiples(n);
   
   return sum;
 };
